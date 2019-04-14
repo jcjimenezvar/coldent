@@ -1,0 +1,27 @@
+{
+  "name": "coldent",
+  "version": "1.0.0",
+  "description": "coldent page of services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcjimenezvar/coldent.git"
+  },
+  "keywords": [
+    "coldent",
+    "odontologia",
+    "ortodoncia"
+  ],
+  "author": "Yank Aldana Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcjimenezvar/coldent/issues"
+  },
+  "homepage": "https://github.com/jcjimenezvar/coldent#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
