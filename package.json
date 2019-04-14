@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/jcjimenezvar/coldent#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "hbs": "^4.0.3"
   }
 }
