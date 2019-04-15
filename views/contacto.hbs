@@ -83,20 +83,20 @@
           <div class="row">
               <div class="col-sm-6 contact-form-box contact-box">
                     <h2 class="cb-title">Envíenos un <strong>Mensaje</strong></h2>
-                    <form id="contactForm" method="post" class="contact-form">
+                    <form method="POST" class="contact-form" action="/sendMessage">
                         <div class="form-group">
                             <label for="name">Nombre</label>
                             <input type="text" name="name" id="name" placeholder="Nombre Completo" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="Email " class="form-control">
+                            <input type="text" name="email" id="email" placeholder="Email" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensage</label>
+                            <label for="message">Mensaje</label>
                             <textarea name="message" id="message" rows="10" class="form-control" placeholder="Ingrese Mensaje "></textarea>
                         </div>
-                        <input type="submit" value="EVIAR" class="btn btn-primary">
+                        <input type="submit" value="ENVIAR" class="btn btn-primary">
                     </form>
               </div>
               <div class="col-sm-6 contact-info-box contact-box">
@@ -122,7 +122,7 @@
                         </ul>
                     </div>
                     <div class="row contact-ibox">
-                        <h2 class="cb-title"><strong>Redes Soci</strong></h2>
+                        <h2 class="cb-title"><strong>Redes Sociales</strong></h2>
                         <ul class="media-list contact-infolist">
                             <li class="media">
                                 <div class="media-left"><span class="media-object"><img src="assets/icons/cion5.png" alt="Contact Icon 1"></span></div>
@@ -155,11 +155,10 @@
                     <h4 class="widget-title">Quick Links</h4>
                     <div class="row widget-content">
                         <ul class="menu">
-                            <li><a href="index.html">Home Page</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-post.html">Blog Details</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Quick Pages</a></li>
+                            <li><a href="/">Home Page</a></li>
+                            <li><a href="/nosotros">Blog</a></li>
+                            <li><a href="/productos">Blog Details</a></li>
+                            <li><a href="/contacto">Contact</a></li>
                         </ul>
                     </div>
                 </div>
