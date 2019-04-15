@@ -1,7 +1,7 @@
 const EMAIL_INFORMATION = {
     FROM: 'contacto@coldent.com',
     SUBJECT: 'Contacto Pagina Web',
-    SEND: 'jjimenezv24@gmail.com',
+    SEND: 'yanksan11@gmail.com',
     TITLE: 'Mensaje pagina contacto'
 }
 
