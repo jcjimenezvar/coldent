@@ -1,39 +1,23 @@
 'use strict'
-
-const nodemailer = require('nodemailer')
-
-const transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-        user: 'jjimenezv24@gmail.com',
-        pass: 'Labebepreciosa24'
-    }
-})
-
+const sendmail = require('sendmail')();
+const CONSTANTES = require('../constants/constants')
 exports.sendMessage = async (req, res) => {
     let name = req.body.name;
     let email = req.body.email;
     let message = req.body.message;
-    const mailOptions = {
-        from: name,
-        to: email,
-        subject: 'Mensaje de Pagina',
-        text: message
-    }
     try {
-        let info = await transporter.sendMail(mailOptions, function (error, info) {
-            if (error) {
-                console.log(error);
-                res.status(500).send(req.body);
-            } else {
-                console.log("Email sent");
-                res.status(200).jsonp(req.body);
-            }
-        });
-        console.log(info);
+        await sendmail({
+            from: CONSTANTES.EMAIL_INFORMATION.FROM,
+            to: CONSTANTES.EMAIL_INFORMATION.SEND,
+            subject: CONSTANTES.EMAIL_INFORMATION.SUBJECT,
+            html: `<p><b>${CONSTANTES.EMAIL_INFORMATION.TITLE}</b> to myself </p>` +
+                `<p>Información mensaje: Cliente: ${name}, Email: ${email}, Mensaje: ${message} <br/></p>`
+        }, function (err, reply) {
+            if (err) console.log(`No se pudo enviar el correo a ${email}`);
+
+            console.dir(reply)
+        })
     } catch (error) {
         throw error.message;
     }
-
-
 }
