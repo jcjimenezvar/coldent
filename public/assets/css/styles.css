@@ -304,7 +304,7 @@ p {
   .navbar-style1 .navbar-header .navbar-brand {
     display: block;
     height: 100px;
-    padding: 20px;
+    padding: 10px;
     /*este es el que agranda la barra menu*/ }
   .navbar-style1 .navbar-header .navbar-toggle {
     z-index: 2;
@@ -4557,7 +4557,7 @@ p {
     color: #647482; }
 
 .site-footer-bottom {
-  padding: 43px 0;
+  padding: 20px 0;
   background: #2c383d; }
   .site-footer-bottom.botpad0 {
     padding-bottom: 0; }
@@ -4578,13 +4578,13 @@ p {
     font-family: "Poppins", sans-serif;
     margin-top: 0;
     margin-bottom: 35px;
-    color: #fff; }
+    color: #fff; 
+    text-align: center;}
   .widget-footer .menu {
     padding: 0;
     list-style: none; }
     .widget-footer .menu li {
-      padding: 0 15px;
-      width: 50%;
+      padding: 0 10px;
       float: left;
       margin-bottom: 18px; }
       @media (max-width: 479px) {
@@ -4607,7 +4607,8 @@ p {
 
 .fsocial {
   padding: 0 15px;
-  display: table; }
+  display: table;
+  margin: auto; }
   .fsocial li {
     float: left;
     margin-right: 22px;
