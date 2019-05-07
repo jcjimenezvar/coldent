@@ -2616,6 +2616,52 @@ p {
     background: url(../images/testimonios.jpg) no-repeat fixed center center;
     background-size: cover;
     opacity: 0.21; }
+  
+    .c3a-plan {
+      padding: 10px 0 10px;
+      background: #36424d; }
+      .c3a-plan:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../images/l2.png) no-repeat fixed center center;
+        background-size: cover;
+        }
+      
+        .c4a-plan {
+          padding: 10px 0 0px;
+          background: #36424d; }
+          .c4a-plan:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url(../images/l4.png) no-repeat fixed center center;
+            background-size: cover;
+            }
+    
+            .c5a-plan {
+              padding: 10px 0 10px;
+              background: #36424d; }
+              .c5a-plan:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url(../images/l2.png) no-repeat fixed center center;
+                background-size: cover;
+                }
+        
 
 .c2ap-title {
   color: #fff;
