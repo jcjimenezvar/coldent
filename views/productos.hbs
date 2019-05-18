@@ -67,9 +67,16 @@
                 </ul>
                 <ul class="navbar-nav nav navbar-right">
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="/nosotros">Nosotros</a></li>
-                    <li class="active"><a href="/productos">Productos</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
+					<li><a href="/nosotros">Nosotros</a></li>
+					<li  class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown </span></a>
+          <ul class="dropdown-menu">
+                                    <li><a href="/productos">Laboratorio Dental</a></li>
+                                    <li><a href="#">Clínica Odontologica</a></li>
+                                    <li><a href="#">Equipos</a></li>
+                                </ul>             
+                    </li>
+					<li><a href="/contacto">Contacto</a></li>
                    
                 </ul>
             </div>          
@@ -107,12 +114,11 @@
 
       <div class="col-lg-3">
 
-        <h1 class="my-4">Productos</h1>
-        <div class="list-group">
-          <a href="#" class="list-group-item">Productos de laboratorio</a>
-          <a href="#" class="list-group-item">Productos clinicos Odontologicos</a>
-          <a href="#" class="list-group-item">Equipos</a>
-        </div>
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
       </div>
       <!-- /.col-lg-3 -->
 
