@@ -170,6 +170,10 @@ section.row, header.row, footer.row {
 .pstatic {
   position: static; }
 
+#centrarboton{
+  align-items: center;
+}
+
 a, .btn, button {
   outline: none;
   border-radius: 0;
@@ -200,12 +204,12 @@ p {
     margin-left: 15px; }
 
 .btn-primary {
-  padding: 0 28px;
-  line-height: 54px;
-  background: #ff6726;
+  padding: 0 18px;
+  line-height: 30px;
+  background: #36424d;
   color: #fff; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #36424d;
+    background: #ff6726;
     color: #fff; }
 
 .btn-long {
