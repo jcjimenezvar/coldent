@@ -120,57 +120,26 @@
 	
 	
     <!--Why Choose Us-->
+    
     <section class="row why-choose-us">
         <div class="container">
             <div class="row section-title text-center">
 				<h2>Destacados</h2>
 			</div>
+            {{#each list}}
            <div class="row">
                <div class="col-sm-6 col-md-4 why-to-choose">
                    <div class="row wtc-inner text-center">
-                       <div > <a href="/productos"><img class="row wtc-icon" src="http://placehold.it/300x200" alt=""></a>	</div>
-                       <h2 class="h4 wtc-title">Producto 1</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
+                       <div ><img class="row wtc-icon" src="{{this.imageUrl}}" style="width: 300px; height: 200px">
+                       <h2 class="h4 wtc-title">{{this.nombre}}</h2>
+                       <p>{{this.description}}</p>
                      </div>
-               </div>
-               <div class="col-sm-6 col-md-4 why-to-choose">
-                   <div class="row wtc-inner text-center">
-                       <div > <a href="/productos"><img class="row wtc-icon" src="http://placehold.it/300x200" alt=""></a>	</div>
-                       <h2 class="h4 wtc-title">Producto 1</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
-                     </div>
-               </div>
-               <div class="col-sm-6 col-md-4 why-to-choose">
-                   <div class="row wtc-inner text-center">
-                       <div > <a href="/productos"><img class="row wtc-icon" src="http://placehold.it/300x200" alt=""></a>	</div>
-                       <h2 class="h4 wtc-title">Producto 1</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
-                     </div>
-               </div>
-               <div class="col-sm-6 col-md-4 why-to-choose">
-                   <div class="row wtc-inner text-center">
-                       <div > <a href="/productos"><img class="row wtc-icon" src="http://placehold.it/300x200" alt=""></a>	</div>
-                       <h2 class="h4 wtc-title">Producto 1</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
-                     </div>
-               </div>
-               <div class="col-sm-6 col-md-4 why-to-choose">
-                   <div class="row wtc-inner text-center">
-                       <div > <a href="/productos"><img class="row wtc-icon" src="http://placehold.it/300x200" alt=""></a>	</div>
-                       <h2 class="h4 wtc-title">Producto 1</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
-                     </div>
-               </div>
-               <div class="col-sm-6 col-md-4 why-to-choose">
-                   <div class="row wtc-inner text-center">
-                       <div > <a href="/productos"><img class="row wtc-icon" src="http://placehold.it/300x200" alt=""></a>	</div>
-                       <h2 class="h4 wtc-title">Producto 1</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
-                     </div>
-               </div>
+               </div>               
            </div>
+           {{/each}}
         </div>
     </section>
+    
     
     <!--recomendaciones-->
     <section class="row c2a-plan">

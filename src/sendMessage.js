@@ -1,6 +1,6 @@
 'use strict'
 const sendmail = require('sendmail')();
-const CONSTANTES = require('../constants/constants')
+const CONSTANTES = require('../constants/constants').default
 exports.sendMessage = async (req, res) => {
     let name = req.body.name;
     let email = req.body.email;
