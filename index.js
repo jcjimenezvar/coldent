@@ -27,7 +27,7 @@ app.get('/nosotros', function (req, res) {
 })
 
 app.get('/productos', async function (req, res) {    
-    res.render('productos', data);
+    res.render('productos');
 })
 
 app.get('/contacto', function (req, res) {
