@@ -72,16 +72,9 @@
 					<li class="active"><a href="/contacto">Contacto</a></li> 
                 </ul>
                 <ul class="navbar-nav nav navbar-right" >
-					<li><a href="/">Vita</a></li>
-					<li><a href="#">Bego</a></li>
-					<li><a href="#">Ivoclar</a></li>
-                    <li><a href="#">Zhermack</a></li>
-					<li><a href="#">Yety</a></li>
-                    <li><a href="#">Dentona</a></li>
-                    <li><a href="#">keystone</a></li>
-                    <li><a href="#">WyH</a></li>
-                    <li><a href="#">Renfer</a></li>
-                    <li><a href="#">otros</a></li>
+					{{#each menuProducts}}
+					<li><a href="/productosBrand?brand={{this.product}}">{{this.product}}</a></li>					
+                    {{/each}}
 				</ul>
             </div>          
         </div>
