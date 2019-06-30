@@ -54,33 +54,8 @@ const menuProducts = [
   { product: "Otros" }
 ];
 
-const vita = [
-  { title: "VITA Easyshade® V",
-    shortDescription: 'El espectrofotómetro VITA Easyshade V ha sido desarrollado para la determinación del color precisa, rápida y fiable de dientes naturales, así como de restauraciones cerámicas.',
-    imageUrl: 'assets/images/vita/1.jpg'
-  },
-  { title: "VITAPAN EXCELL® Anterior",
-    shortDescription: 'El espectrofotómetro VITA Easyshade V ha sido desarrollado para la determinación del color precisa, rápida y fiable de dientes naturales, así como de restauraciones cerámicas.',
-    imageUrl: 'assets/images/vita/2.jpg'
-  },
-  
-  { title: "VITAPAN PLUS® Anterior",
-    shortDescription: 'El espectrofotómetro VITA Easyshade V ha sido desarrollado para la determinación del color precisa, rápida y fiable de dientes naturales, así como de restauraciones cerámicas.',
-    imageUrl: 'assets/images/vita/3.jpg'
-  },
-  { title: "VITAPAN® LINGOFORM Posterior",
-    shortDescription: 'El espectrofotómetro VITA Easyshade V ha sido desarrollado para la determinación del color precisa, rápida y fiable de dientes naturales, así como de restauraciones cerámicas.',
-    imageUrl: 'assets/images/vita/4.jpg'
-  },
-];
-
-
-
-
-
 module.exports = {
   EMAIL_INFORMATION,
   principalProducts,
-  menuProducts,
-  vita
+  menuProducts
 };

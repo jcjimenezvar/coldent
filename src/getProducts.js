@@ -1,6 +1,8 @@
 "use strict";
 
 let products = require("../constants/constants");
+let productsdVita = require("../productsByBrand/vita");
+let productsdBego = require("../productsByBrand/bego");
 
 exports.getProducts = async (req, res) => {
   try {
@@ -24,12 +26,10 @@ exports.getProductsByBrand = async brand => {
   try {
     switch (brand) {
       case 'Vita':
-        productBrandList = products.vita;
-        console.log(productBrandList);
-        
+        productBrandList = productsdVita.vita;
         break;
       case 'Bego':
-        productBrandList;
+        productBrandList = productsdBego.bego;
         break;
       case 'Ivoclar':
         productBrandList;
@@ -56,7 +56,7 @@ exports.getProductsByBrand = async brand => {
         productBrandList;
         break;
       default:
-        productBrandList = products.vita;
+        productBrandList = productsdVita.vita;
         break;
     }
   } catch (error) {

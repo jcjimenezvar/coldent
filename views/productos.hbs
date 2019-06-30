@@ -75,8 +75,7 @@
                     </ul>
                     <ul class="navbar-nav nav navbar-right">
                         <li><a href="/">Inicio</a></li>
-                        <li><a href="/nosotros">Nosotros</a></li>
-                        <li class="active"><a href="/productos">Productos</a></li>
+                        <li><a href="/nosotros">Nosotros</a></li>                        
                         <li><a href="/contacto">Contacto</a></li>
 
                     </ul>
@@ -134,31 +133,35 @@
                 <div class="col-lg-12">
                     <div class="row">
                         {{#each productsByBrand}}
-                        <div class="col-sm-6 col-md-4 why-to-choose text-center">
+                        <div class="col-sm-6 col-md-3 why-to-choose text-center">
                             <div class="thumbnail">                                
                                 <img src="{{this.imageUrl}}" alt="...">
                                 <div class="caption">
-                                    <h3>{{this.title}}</h3>
-                                    <p>{{this.shortDescription}}</p>
-                                    <p><a href="#" class="btn btn-lg btn-primary" data-toggle="modal"
-                                            data-target="#largeModal">Ver Mas</a></p>
+                                    <h5>{{this.title}}</h5>                                    
+                                    <p><a href="#" class="btn btn-ls btn-primary" data-toggle="modal"
+                                            data-target="#largeModal{{this.idModal}}">Ver Mas</a></p>
                                 </div>
                             </div>
                         </div>
-                        {{/each}}
-                        <!-- /modal-->                       
-    
-                        <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal"
+                        <div class="modal fade" id="largeModal{{this.idModal}}" tabindex="-1" role="dialog" aria-labelledby="largeModal"
                             aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">Titulo Producto</h4>
+                                        <h4 class="modal-title" id="myModalLabel">{{this.title}}</h4>
                                     </div>
-                                    <div class="modal-body">
-                                        <h3>Modal Body</h3>
+                                    <div class="col-lg-12 modal-body">
+                                        <div class=" row">
+                                            <div class="col-sm-6 col-md-6" style="margin: auto !important">
+                                                 <img src="{{this.imageUrl}}" alt="" >
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                 <h5>{{this.shortDescription}}</h5>
+                                            </div>
+                                        
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default"
@@ -167,6 +170,10 @@
                                 </div>
                             </div>
                         </div>
+                        {{/each}}
+                        <!-- /modal-->                       
+    
+                        
 
                         <!-- /modal -->
                     </div>
