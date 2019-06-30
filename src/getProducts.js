@@ -3,6 +3,7 @@
 let products = require("../constants/constants");
 let productsdVita = require("../productsByBrand/vita");
 let productsdBego = require("../productsByBrand/bego");
+let productsdZhermack = require("../productsByBrand/zhermack");
 
 exports.getProducts = async (req, res) => {
   try {
@@ -21,8 +22,7 @@ exports.getMenuProducts = async (req, res) => {
 };
 
 exports.getProductsByBrand = async brand => {
-  let productBrandList;
-  console.log(brand)
+  let productBrandList;  
   try {
     switch (brand) {
       case 'Vita':
@@ -32,10 +32,10 @@ exports.getProductsByBrand = async brand => {
         productBrandList = productsdBego.bego;
         break;
       case 'Ivoclar':
-        productBrandList;
+        productBrandList
         break;
       case 'Zhermack':
-        productBrandList;
+        productBrandList = productsdZhermack.zhermack;
         break;
       case 'Yety':
         productBrandList;
