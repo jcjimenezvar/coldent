@@ -50,8 +50,7 @@ const menuProducts = [
   { product: "Dentona" },
   { product: "Keystone" },
   { product: "WyH" },
-  { product: "Renfer" },
-  { product: "Otros" }
+  { product: "Renfert" }
 ];
 
 module.exports = {

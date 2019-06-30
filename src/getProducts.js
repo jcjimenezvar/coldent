@@ -4,6 +4,12 @@ let products = require("../constants/constants");
 let productsdVita = require("../productsByBrand/vita");
 let productsdBego = require("../productsByBrand/bego");
 let productsdZhermack = require("../productsByBrand/zhermack");
+let productsdWyh = require("../productsByBrand/wyh");
+let productsdIvoclar = require("../productsByBrand/ivoclar");
+let productsdYety = require("../productsByBrand/yety");
+let productsdDentona = require("../productsByBrand/dentona");
+let productsdKeystone = require("../productsByBrand/keystone");
+let productsdRenfert = require("../productsByBrand/renfert");
 
 exports.getProducts = async (req, res) => {
   try {
@@ -22,38 +28,35 @@ exports.getMenuProducts = async (req, res) => {
 };
 
 exports.getProductsByBrand = async brand => {
-  let productBrandList;  
+  let productBrandList;
   try {
     switch (brand) {
-      case 'Vita':
+      case "Vita":
         productBrandList = productsdVita.vita;
         break;
-      case 'Bego':
+      case "Bego":
         productBrandList = productsdBego.bego;
         break;
-      case 'Ivoclar':
-        productBrandList
+      case "Ivoclar":
+        productBrandList = productsdIvoclar.ivoclar;
         break;
-      case 'Zhermack':
+      case "Zhermack":
         productBrandList = productsdZhermack.zhermack;
         break;
-      case 'Yety':
-        productBrandList;
+      case "Yety":
+        productBrandList = productsdYety.yety;
         break;
-      case 'Dentona':
-        productBrandList;
+      case "Dentona":
+        productBrandList = productsdDentona.dentona;
         break;
-      case 'Keystone':
-        productBrandList;
+      case "Keystone":
+        productBrandList = productsdKeystone.keystone;
         break;
-      case 'WyH':
-        productBrandList;
+      case "WyH":
+        productBrandList = productsdWyh.wyh;
         break;
-      case 'Renfer':
-        productBrandList;
-        break;
-      case 'Otros':
-        productBrandList;
+      case "Renfert":
+        productBrandList = productsdRenfert.renfert;
         break;
       default:
         productBrandList = productsdVita.vita;
