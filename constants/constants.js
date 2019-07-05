@@ -48,7 +48,7 @@ const menuProducts = [
   { product: "Zhermack" },
   { product: "Yety" },
   { product: "Dentona" },
-  { product: "Keystone" },
+  /*{ product: "Keystone" },*/
   { product: "WyH" },
   { product: "Renfert" }
 ];
