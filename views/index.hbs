@@ -138,47 +138,25 @@
 	
 <div class="container">
 
-            <div class="row">
-
-                
-                <!-- /.col-lg-3 -->
-                <div class="col-lg-12">
+            <div class="row">               
+                <!-- /.col-lg-3 -->                
+                <div class="col-lg-12">                    
                     <div class="row">
+                        {{#each list}}
                         <div class="col-sm-6 col-md-4 why-to-choose text-center">
                             <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">                                
-                                <img src="assets/images/dentona/2.jpg" alt="...">
+                                <img src="{{this.imageUrl}}" alt="...">
                                 <div class="caption">
-                                    <h5 style="font-weight: bold;">producto1</h5>                                    
-                                    <p><a href="#" class="btn btn-ls btn-primary" >Ver Mas</a></p>
+                                    <h5 style="font-weight: bold;">{{this.nombre}}</h5>                                    
+                                    <p><a href="/productos" class="btn btn-ls btn-primary" >Ver Mas</a></p>
                                 </div>
                             </div>
                         </div>
+                        {{/each}}
                     </div>
                 </div>
             </div>
-
         </div>
-    <!--Why Choose Us
-    
-    <section class="row why-choose-us">
-        <div class="container">
-            <div class="row section-title text-center">
-				<h2>Destacados</h2>
-			</div>
-            {{#each list}}
-           <div class="row">
-               <div class="col-sm-6 col-md-4 why-to-choose">
-                   <div class="row wtc-inner text-center">
-                       <div ><img class="row wtc-icon" src="{{this.imageUrl}}" style="width: 300px; height: 200px">
-                       <h2 class="h4 wtc-title">{{this.nombre}}</h2>
-                       <p>{{this.description}}</p>
-                     </div>
-               </div>               
-           </div>
-           {{/each}}
-        </div>
-    </section>
-    -->
     
     <!--recomendaciones-->
     <section class="row c2a-plan">
