@@ -76,19 +76,107 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="main-nav">
-				<ul class="nav navbar-nav navbar-right cart-nav">
-					
-				</ul>
+				
 				<ul class="navbar-nav nav navbar-right">
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                <ul class="dropdown-menu">
+                                    <form class="form-search">
+                                        <div class="input-group">
+                                             <input class="form-control form-text" maxlength="128" placeholder="Buscar" size="15" type="text" />
+                                                <span class="input-group-btn"><button class="btn btn-primary"><i class="fa fa-search fa-lg">&nbsp;</i></button></span>
+                                        </div>
+                                    </form> 
+                                </ul>
+                    </li>
 					<li class="active"><a href="/">Inicio</a></li>
 					<li><a href="/nosotros">Nosotros</a></li>					
 					<li><a href="/contacto">Contacto</a></li>
-				</ul>                
-                <ul class="navbar-nav nav navbar-right" >
-                    {{#each menuProducts}}
-					<li><a href="/productosBrand?brand={{this.product}}">{{this.product}}</a></li>					
-                    {{/each}}
-				</ul>
+				</ul>                   
+                
+                <ul class="navbar-nav nav navbar-right">
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             vita
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">dienets</a></li> 
+                                    <li><a href="#">bloques y discos</a></li>
+                                    <li><a href="#">Equipo</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>
+					<li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             Bego
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>					
+					<li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             Ivoclar
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             Zhermack
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Yety
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Dentona
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            WyH
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Renfert
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>		
+				</ul> 
 
 			</div>
             			
@@ -158,21 +246,21 @@
             </div>
         </div>
     
-    <!--recomendaciones-->
+    <!--recomendaciones
     <section class="row c2a-plan">
       <div class="container arriba">
             <div class="row  text-center">
         <h2 class="h1 c2ap-title"><strong>TESTIMONIOS</strong></h2>
       </div>
             <div id="customer-testimonial" class="customer-testimonial carousel slide" data-ride="carousel">
-                <!-- Indicators -->
+                <!-- Indicators 
                 <ol class="carousel-indicators ct-indicator imgv">
                     <li data-target="#customer-testimonial" data-slide-to="0"><img src="assets/images/ct1.jpg" alt="Customer Image"></li>
                     <li data-target="#customer-testimonial" data-slide-to="1" class="active"><img src="assets/images/ct3.jpg" alt="Customer Image"></li>
                     <li data-target="#customer-testimonial" data-slide-to="2"><img src="assets/images/ct2.jpg" alt="Customer Image"></li>
                 </ol>
 
-                <!-- Wrapper for slides -->
+                <!-- Wrapper for slides 
                 <div class="carousel-inner" role="listbox">
                     <div class="item carousel-item" data-slide-no="0">
                         <p><em>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</em></p>
@@ -191,31 +279,31 @@
                     </div>
                 </div>
             </div>
-            <!-- Indicators -->
+            <!-- Indicators 
             <ul class="carousel-indicators ct-indicator dotv">
                 <li data-target="#customer-testimonial" data-slide-to="0" class="myCarousel-target"></li>
                 <li data-target="#customer-testimonial" data-slide-to="1" class="myCarousel-target active"></li>
                 <li data-target="#customer-testimonial" data-slide-to="2" class="myCarousel-target"></li>
             </ul>
-        </div>
+        </div> 
        
     </section>
-    
+    -->
     <!--Clients-->
     <section class="row client-logos">
         <div class="container">            
             <div class="row section-title text-center">
 				<h2>Marcas Representantes</h2>
 			</div>
-            <div class="row">
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Adobe"><img src="assets/images/marca1.png" alt="Adobe"></a></div>
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Huawei"><img src="assets/images/marca2.png" alt="Huawei"></a></div>
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="One Plus"><img src="assets/images/marca3.png" alt="One Plus"></a></div>
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Mitsubishi"><img src="assets/images/marca4.png" alt="Mitsubishi"></a></div>
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Samsung"><img src="assets/images/marca5.png" alt="Samsung"></a></div>
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Under Armour"><img src="assets/images/marca6.png" alt="Under Armour"></a></div>
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Under Armour"><img src="assets/images/marca7.png" alt="Under Armour"></a></div>
-                <div class="col-sm-2 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Under Armour"><img src="assets/images/marca8.png" alt="Under Armour"></a></div>
+            <div class="row" style="margin: auto">
+                <div class="col-sm-1 client-logo" ><a href="/" data-toggle="tooltip" data-placement="top" title="Vita"><img src="assets/images/marca1.png" alt="Adobe"></a></div>
+                <div class="col-sm-1 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="keystone"><img src="assets/images/marca2.png" alt="Huawei" ></a></div>
+                <div class="col-sm-1 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Zhermack"><img src="assets/images/marca3.png" alt="One Plus" ></a></div>
+                <div class="col-sm-1 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Yeti"><img src="assets/images/marca4.png" alt="Mitsubishi" ></a></div>
+                <div class="col-sm-1 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Bego"><img src="assets/images/marca5.png" alt="Samsung" ></a></div>
+                <div class="col-sm-1 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Protechno"><img src="assets/images/marca6.png" alt="Under Armour" ></a></div>
+                <div class="col-sm-1 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Shofu"><img src="assets/images/marca7.png" alt="Under Armour"></a></div>
+                <div class="col-sm-1 client-logo"><a href="/" data-toggle="tooltip" data-placement="top" title="Ivoclar Vivadent"><img src="assets/images/marca8.png" alt="Under Armour" ></a></div>
             </div>
         </div>
     </section>

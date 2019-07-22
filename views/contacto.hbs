@@ -77,15 +77,105 @@
                 <ul class="nav navbar-nav navbar-right cart-nav">
                 </ul>
                 <ul class="navbar-nav nav navbar-right">
-                   <li><a href="/">Inicio</a></li>
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                <ul class="dropdown-menu">
+                                    <form class="form-search">
+                                        <div class="input-group">
+                                             <input class="form-control form-text" maxlength="128" placeholder="Buscar" size="15" type="text" />
+                                                <span class="input-group-btn"><button class="btn btn-primary"><i class="fa fa-search fa-lg">&nbsp;</i></button></span>
+                                        </div>
+                                    </form> 
+                                </ul>
+                    </li>
+                    <li><a href="/">Inicio</a></li>
 					<li><a href="/nosotros">Nosotros</a></li>					
 					<li class="active"><a href="/contacto">Contacto</a></li> 
                 </ul>
-                <ul class="navbar-nav nav navbar-right" >
-					{{#each menuProducts}}
-					<li><a href="/productosBrand?brand={{this.product}}">{{this.product}}</a></li>					
-                    {{/each}}
-				</ul>
+                <ul class="navbar-nav nav navbar-right">
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             vita
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">dienets</a></li> 
+                                    <li><a href="#">bloques y discos</a></li>
+                                    <li><a href="#">Equipo</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>
+					<li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             Bego
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>					
+					<li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             Ivoclar
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                             Zhermack
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Yety
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Dentona
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            WyH
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>	
+                    <li role="presentation" class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Renfert
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ceras</a></li> 
+                                    <li><a href="#">metales</a></li>
+                                    <li><a href="#">reestimientos</a></li>
+                                    <li><a href="#">varios</a></li>
+                                </ul>
+                    </li>		
+				</ul> 
+
             </div>          
         </div>
     </nav>
