@@ -7,70 +7,6 @@ const vita = [
     modalImageUrl: "assets/images/modalImages/vita/1.jpg"
   },
   {
-    title: "VITAPAN EXCELL® Anterior",
-    shortDescription: 'Dientes anteriores de gama alta de composite MRP, ricos en matices, corpóreos y naturales. Confección sencilla de prótesis altamente estéticas gracias a formas dentales naturales con proporciones “áureas” Extraordinario juego de colores y luces gracias a la excelente dinámica lumínica y a la transición cromática armoniosa. Buena reproducción cromática en caso de dientes remanentes naturales gracias a la máxima fidelidad cromática a la guía de colores, excelente estabilidad gracias a la elevada capacidad de carga y a la resistencia a la abrasión Configuración excelente de la encía gracias al diseño ancho del cuello dental',
-    imageUrl: 'assets/images/vita/2.jpg',
-    idModal: 2,
-    modalImageUrl: "assets/images/modalImages/vita/2.jpg"
-  },
-
-  {
-    title: "VITAPAN PLUS® Anterior",
-    shortDescription: 'Dientes anteriores de gama alta y apariencia natural, de composite MRP con un plus de translucidez. Juego de luces natural gracias a la extraordinaria translucidez derivada de la elevada proporción de esmalte Facilidad de reconstrucción de la estética juvenil gracias a las formas dentales corpóreas, juveniles y vitales Excelente estabilidad gracias a la elevada capacidad de carga y a la resistencia a la abrasión Desbastado y pulido eficientes gracias a la homogeneidad óptima del material y a la estabilidad de los ángulos',
-    imageUrl: 'assets/images/vita/3.jpg',
-    idModal: 3,
-    modalImageUrl: "assets/images/modalImages/vita/3.jpg"
-  },
-  {
-    title: "VITAPAN® LINGOFORM Posterior",
-    shortDescription: 'Dientes posteriores de gama alta, corpóreos y multifuncionales, de composite MRP. Montaje sencillo e intuitivo gracias a la determinación “automática” de la céntrica, derivada del diseño de la superficie masticatoria conforme al principio del engranaje De uso universal y fiable para todos los conceptos protésicos gracias al diseño multifuncional de las superficies masticatorias rapidez de montaje sin necesidad de desbastado laborioso, gracias a la céntrica exactamente definida Excelente estabilidad gracias a la elevada capacidad de carga, la resistencia a la abrasión y la función apoyada en la céntrica Gran facilidad de mecanización gracias a la homogeneidad óptima del material y a la estabilidad de los ángulos',
-    imageUrl: 'assets/images/vita/4.jpg',
-    idModal: 4,
-    modalImageUrl: "assets/images/modalImages/vita/4.jpg"
-  },
-  {
-    title: "VITA PHYSIODENS® Anterior",
-    shortDescription: 'Dientes anteriores de gama alta de composite MRP, corpóreos y fieles al detalle. Integración óptima en la dentadura natural remanente gracias a las formas complejas y fieles al detalle Juego de luces natural gracias a la textura superficial variada Buena reproducción cromática en caso de dientes remanentes naturales gracias a la gran fidelidad cromática a la guía de colores y a la amplia selección de colores Enmascaramiento fiable de estructuras secundarias y terciarias gracias a un elevado volumen dental (basal) Excelente estabilidad gracias a la elevada capacidad de carga y a la resistencia a la abrasión',
-    imageUrl: 'assets/images/vita/5.jpg',
-    idModal: 5,
-    modalImageUrl: "assets/images/modalImages/vita/5.jpg"
-  },
-  {
-    title: "VITA PHYSIODENS® Posterior",
-    shortDescription: 'Dientes posteriores de gama alta de composite MRP, corpóreos y fieles al detalle. Restablecimiento sencillo de la función masticatoria gracias a la morfología natural de las superficies oclusales Determinación intuitiva de la céntrica y buena intercuspidación gracias al diseño oclusal apoyado en la céntrica Buena reproducción cromática en caso de dientes remanentes naturales gracias a la fidelidad cromática a la guía de colores y a la amplia selección de colores Enmascaramiento fiable de estructuras terciarias gracias a un elevado volumen dental (basal) Excelente estabilidad gracias a la elevada capacidad de carga y a la resistencia a la abrasión',
-    imageUrl: 'assets/images/vita/6.jpg',
-    idModal: 6,
-    modalImageUrl: "assets/images/modalImages/vita/6.jpg"
-  },
-  {
-    title: "VITA LUMIN® VACUUM Anterior",
-    shortDescription: 'Los dientes de cerámica son ideales para todas las indicaciones en las prótesis parciales y completas de alta gama. Poseen un brillo elevado gracias a su efecto Lumin inherente, e imitan a la naturaleza en cuanto a su conductividad de la luz, opalescencia y fluorescencia. Las piezas únicas confeccionadas a mano en Alemania incorporan elementos de anclaje mecánicos adicionales en la base de la prótesis, a fin de garantizar la estabilidad de las prótesis a largo plazo: Dientes anteriores con pernos recubiertos de oro insertados en el núcleo de cerámica dura. Dientes posteriores con cavidades retentivas.',
-    imageUrl: 'assets/images/vita/7.jpg',
-    idModal: 7,
-    modalImageUrl: "assets/images/modalImages/vita/7.jpg"
-  },
-  {
-    title: "VITA LUMIN® VACUUM Posterior",
-    shortDescription: 'Los dientes de cerámica son ideales para todas las indicaciones en las prótesis parciales y completas de alta gama. Poseen un brillo elevado gracias a su efecto Lumin inherente, e imitan a la naturaleza en cuanto a su conductividad de la luz, opalescencia y fluorescencia. Las piezas únicas confeccionadas a mano en Alemania incorporan elementos de anclaje mecánicos adicionales en la base de la prótesis, a fin de garantizar la estabilidad de las prótesis a largo plazo: Dientes anteriores con pernos recubiertos de oro insertados en el núcleo de cerámica dura. Dientes posteriores con cavidades retentivas.',
-    imageUrl: 'assets/images/vita/8.jpg',
-    idModal: 8,
-    modalImageUrl: "assets/images/modalImages/vita/8.jpg"
-  },
-  {
-    title: "VITA MFT® Anterior",
-    shortDescription: 'Dientes anteriores básicos de material de polímero HC para la prótesis estándar sólida. Confección fiable de prótesis estéticas sólidas gracias al diseño incisal y a las características angulares fieles al modelo natural. Reproducción sencilla de un juego de luces natural gracias a la proporción esmalte-dentina equilibrada, a los mamelones integrados y a la textura. Reproducción cromática fiable gracias a la buena fidelidad cromática al estándar de colores VITA (VITA classical A1–D4®).',
-    imageUrl: 'assets/images/vita/9.jpg',
-    idModal: 9,
-    modalImageUrl: "assets/images/modalImages/vita/9.jpg"
-  },
-  {
-    title: "VITA MFT® Posterior",
-    shortDescription: 'Dientes posteriores básicos de polímero HC con optimización funcional de las superficies masticatorias. Montaje de la prótesis simplificado mediante puntos de contacto predefinidos para una intercuspidación automática. Elevada seguridad de montaje gracias a la optimización funcional de las superficies masticatorias para lograr una guía céntrica dirigida. Menor trabajo de tallado selectivo gracias al diseño basal optimizado. Uso fiable para todos los conceptos protésicos gracias al diseño multifuncional de las superficies masticatorias.',
-    imageUrl: 'assets/images/vita/10.jpg',
-    idModal: 10,
-    modalImageUrl: "assets/images/modalImages/vita/10.jpg"
-  },
-  {
     title: "VITACOLL® Agente adhesivo",
     shortDescription: 'VITACOLL es el agente adhesivo seguro para unir dientes de resina y materiales base. Debido al empleo de los más diversos materiales base, a menudo es difícil saber si estos materiales se van a unir de forma segura a los dientes de resina disponibles. Utilizar VITACOLL garantiza la seguridad necesaria. Frasco de 100 ml. El agente adhesivo VITACOLL proporciona una unión química segura de los dientes de resina con materiales termopolimerizables y autopolimerizables, así como con materiales de inyección de polimetacrilato, evitando que los dientes se separen de la base.',
     imageUrl: 'assets/images/vita/11.jpg',
@@ -218,27 +154,6 @@ const vita = [
     modalImageUrl: "assets/images/modalImages/vita/31.jpg"
   },
   {
-    title: "Rotating Instruments",
-    shortDescription: 'La guía de colores VITABLOCS Guide 3D MASTER, con los dientes de muestra de color realizados en cerámica original VITABLOCS Mark II, permite seleccionar los VITABLOCS adecuados de forma sencilla, rápida y exacta.',
-    imageUrl: 'assets/images/vita/32.jpg',
-    idModal: 32,
-    modalImageUrl: "assets/images/modalImages/vita/32.jpg"
-  },
-  {
-    title: "VITA ADIVA® IA-CEM",
-    shortDescription: 'VITA ADIVA IA-CEM es un composite de fijación ultraopaco con efecto enmascarador intenso y de fraguado dual para prótesis implantosoportadas. Se utiliza para la fijación adhesiva definitiva de coronas (sobre pilar) y mesoestructuras a bases adhesivas de titanio y a pilares individuales de titanio y de dióxido de circonio. El composite de fijación se complementa con agentes adhesivos adaptados específicamente a cada material, para obtener una unión resistente entre la restauración y el pilar.',
-    imageUrl: 'assets/images/vita/33.jpg',
-    idModal: 33,
-    modalImageUrl: "assets/images/modalImages/vita/33.jpg"
-  },
-  {
-    title: "VITA Modulbox",
-    shortDescription: 'VITA MODULBOX es un sistema modular de tamaño A3 para el almacenamiento a largo plazo, de forma clara y adecuada para el material de los productos VITA en laboratorios y consultorios dentales.',
-    imageUrl: 'assets/images/vita/34.jpg',
-    idModal: 34,
-    modalImageUrl: "assets/images/modalImages/vita/34.jpg"
-  },
-  {
     title: "VITA YZ® XT SHADE LIQUIDS",
     shortDescription: 'Líquidos para la coloración manual de restauraciones monolíticas de VITA YZ XT White antes del proceso de sinterización. Los VITA YZ XT SHADE LIQUIDS están disponibles en todos los colores VITA classical A1–D4 y se pueden caracterizar adicionalmente mediante los VITA YZ EFFECT LIQUIDS.',
     imageUrl: 'assets/images/vita/35.jpg',
@@ -281,13 +196,6 @@ const vita = [
     modalImageUrl: "assets/images/modalImages/vita/40.jpg"
   },
   {
-    title: "Accesorios para Cerámica prensada",
-    shortDescription: 'Émbolos VITA PM desechables Envase con 50 émbolos desechables de 12 mm de diámetro, para pastillas de 2 g. Indicados para todas las cerámicas de prensado. Los émbolos desechables ahorran el laborioso arenado de los émbolos de óxido de aluminio y, gracias a su extraordinaria composición, evitan la formación de microgrietas en el cono de prensado. Sistema de revestimiento VITA PM, 200 g Envase con anillo de mufla, base de mufla y plantilla de mufla. Gracias a sus marcas de sectores interiores bien visibles, el anillo de mufla, fabricado de silicona, permite la localización rápida y selectiva del objeto de prensado, con lo que ahorra tiempo y material de arenado. Líquido de mezcla para material de revestimiento VITA PM. Líquido de mezcla especial para el material de revestimiento VITA PM. Material de revestimiento VITA PM. Material de revestimiento fosfatado y libre de grafito para el calentamiento rápido, especialmente para la cerámica de prensado VITA PM9.',
-    imageUrl: 'assets/images/vita/41.jpg',
-    idModal: 41,
-    modalImageUrl: "assets/images/modalImages/vita/41.jpg"
-  },
-  {
     title: "VITAVM®13",
     shortDescription: 'VITA VM 13 es una cerámica de feldespato de estructura fina altamente estética perfectamente adaptada al CET de las aleaciones de cocción clásicas (aprox. 13,8 – 15,2 µm/mK). Con total independencia de si las aleaciones clásicas se cuelan, se fresan o se sinterizan.',
     imageUrl: 'assets/images/vita/42.jpg',
@@ -300,13 +208,6 @@ const vita = [
     imageUrl: 'assets/images/vita/43.jpg',
     idModal: 43,
     modalImageUrl: "assets/images/modalImages/vita/43.jpg"
-  },
-  {
-    title: "VITA TITANKERAMIK",
-    shortDescription: 'El coeficiente de dilatación térmica y las demás propiedades físicas de la VITA TITANKERAMIK se han ajustado exactamente al material titanio. La aplicación correcta de esta cerámica garantiza una unión segura entre la estructura de titanio y la VITA TITANKERAMIK. La óptima armonización de los polvos permite al protésico técnico dental obtener colores luminosos y brillantes de diferente translucidez. La VITA TITANKERAMIK ofrece todas las posibilidades para conseguir buenos resultados estéticos.',
-    imageUrl: 'assets/images/vita/44.jpg',
-    idModal: 44,
-    modalImageUrl: "assets/images/modalImages/vita/44.jpg"
   },
   {
     title: "VITAVM®15",
@@ -342,27 +243,6 @@ const vita = [
     imageUrl: 'assets/images/vita/49.jpg',
     idModal: 49,
     modalImageUrl: "assets/images/modalImages/vita/49.jpg"
-  },
-  {
-    title: "VITAVM®CC",
-    shortDescription: 'VITA VM CC es un material polimerizable en frío sin material de relleno añadido. Es ideal para la confección extraoral de prótesis provisionales. VITA VM CC se caracteriza por unas excelentes propiedades de manipulación, como un comportamiento de mezcla y su excepcional fluidez facilitan el procesamiento. Gracias a la facilidad de pulido y a la homogénea estructura del material, se limitan las acumulaciones de placa en un alto grado. La superficie lisa de la prótesis provisional le proporciona una sensación agradable al paciente y le ofrece mayor comodidad.',
-    imageUrl: 'assets/images/vita/50.jpg',
-    idModal: 50,
-    modalImageUrl: "assets/images/modalImages/vita/50.jpg"
-  },
-  {
-    title: "VITA AKZENT® Plus",
-    shortDescription: 'Los nuevos campos de aplicación requieren materiales nuevos y versátiles. Con los maquillajes VITA AKZENT Plus el usuario puede optimizar cromáticamente todos los tipos de cerámicas dentales de forma sencilla y eficiente, independientemente del CET de la restauración. Tanto si desea colorear la restauración internamente como si quiere caracterizarla superficialmente y aplicar una capa finísima, con los nuevos maquillajes VITA AKZENT Plus fluorescentes podrá hacerlo fácilmente y sin grandes esfuerzos. Los maquillajes VITA AKZENT Plus están disponibles en forma de polvo y como pastas listas para su uso; se adaptan así a distintos campos de aplicación, preferencias de elaboración y hábitos. Los materiales BODY STAINS y GLAZE, de aplicación en capa finísima, también están disponibles en spray, que garantiza un tratamiento extenso y uniforme de la superficie mediante la aplicación homogénea y sin que se desperdicie material. El nuevo pulverizador especial es ideal para una aplicación precisa.',
-    imageUrl: 'assets/images/vita/51.jpg',
-    idModal: 51,
-    modalImageUrl: "assets/images/modalImages/vita/51.jpg"
-  },
-  {
-    title: "VITA INTERNO®",
-    shortDescription: 'Los polvos INTERNO de VITA proporcionan al ceramista los mejores requisitos para conseguir una reproducción todavía más perfecta de los efectos del color desde la profundidad. Gracias a un alto grado de fluorescencia (de forma análoga a como ocurre en la naturaleza) se consigue una mayor potencia lumínica de los colores y se intensifica el transporte de luz. Los polvos INTERNO de VITA pueden mezclarse con polvos de dentina y translúcidos. Con ello, se alcanza un efecto cromático mayor. Con los polvos INTERNO, pueden reproducirse especialmente bien los efectos del color naturales de la zona incisal (contrastes). Gracias a un alto grado de fluorescencia - de forma análoga a como ocurre en la naturaleza - se consigue una mayor potencia lumínica de los colores y se intensifica el transporte de luz. Los colores VITA INTERNO pueden utilizarse universalmente con todas las cerámicas de recubrimiento VITA.',
-    imageUrl: 'assets/images/vita/52.jpg',
-    idModal: 52,
-    modalImageUrl: "assets/images/modalImages/vita/52.jpg"
   },
   {
     title: "VITA ENAMIC® STAINS",
