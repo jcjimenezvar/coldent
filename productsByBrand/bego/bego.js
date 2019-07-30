@@ -7,7 +7,7 @@ const bego = [
     modalImageUrl: "assets/images/modalImages/bego/1.jpg"
   },
   {
-    title: "",
+    title: "Discos perforados",
     shortDescription: "",
     imageUrl: "assets/images/bego/2.jpg",
     idModal: 2,
@@ -35,7 +35,7 @@ const bego = [
     modalImageUrl: "assets/images/modalImages/bego/5.jpg"
   },
   {
-    title: "",
+    title: "Fornax",
     shortDescription: "",
     imageUrl: "assets/images/bego/6.jpg",
     idModal: 6,
@@ -55,13 +55,7 @@ const bego = [
     idModal: 8,
     modalImageUrl: "assets/images/modalImages/bego/8.jpg"
   },
-  {
-    title: "",
-    shortDescription: "",
-    imageUrl: "assets/images/bego/9.jpg",
-    idModal: 9,
-    modalImageUrl: "assets/images/modalImages/bego/9.jpg"
-  },
+  
   {
     title: "Wironit LA",
     shortDescription: "",
@@ -82,13 +76,6 @@ const bego = [
     imageUrl: "assets/images/bego/12.jpg",
     idModal: 12,
     modalImageUrl: "assets/images/modalImages/bego/12.jpg"
-  },
-  {
-    title: "",
-    shortDescription: "",
-    imageUrl: "assets/images/bego/13.jpg",
-    idModal: 13,
-    modalImageUrl: "assets/images/modalImages/bego/13.jpg"
   },
   {
     title: "Cera para Modela",
