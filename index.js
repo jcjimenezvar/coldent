@@ -48,12 +48,12 @@ app.get("/productos", async function(req, res) {
     console.log(data);
   });
 
-  const productsByBrand = await products.getProductsByBrand(req.query.brand);
+  /*const productsByBrand = await products.getProductsByBrand(req.query.brand);
   const context = {
     menuProducts,
     productsByBrand    
-  };
-  res.render("productos", context);
+  };*/
+  res.render("productos", /*context*/);
 });
 
 app.get("/productosBrand", async function(req, res) {
@@ -61,11 +61,12 @@ app.get("/productosBrand", async function(req, res) {
     if (err) throw err;
     console.log(data);
   });
-  const productsByBrand = await products.getProductsByBrand(req.query.brand);
+  const productsByBrand = await products.getProductsByBrand(req.query.product, req.query.category);  
   const context = {    
     menuProducts,
     productsByBrand
   };
+
   res.render("productos", context);
 });
 

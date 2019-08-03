@@ -53,14 +53,14 @@
     <!-- {/literal} END JIVOSITE CODE -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143539867-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143539867-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-143539867-1');
-</script>
+        gtag('config', 'UA-143539867-1');
+    </script>
 
 
 </head>
@@ -86,105 +86,42 @@
                     </ul>
                     <ul class="navbar-nav nav navbar-right">
                         <li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                 <ul class="dropdown-menu">
                                     <form class="form-search">
                                         <div class="input-group">
-                                             <input class="form-control form-text" maxlength="128" placeholder="Buscar" size="15" type="text" />
-                                                <span class="input-group-btn"><button class="btn btn-primary"><i class="fa fa-search fa-lg">&nbsp;</i></button></span>
+                                            <input class="form-control form-text" maxlength="128" placeholder="Buscar"
+                                                size="15" type="text" />
+                                            <span class="input-group-btn"><button class="btn btn-primary"><i
+                                                        class="fa fa-search fa-lg">&nbsp;</i></button></span>
                                         </div>
-                                    </form> 
+                                    </form>
                                 </ul>
-                         </li>
+                        </li>
                         <li><a href="/">Inicio</a></li>
-                        <li><a href="/nosotros">Nosotros</a></li>                        
+                        <li><a href="/nosotros">Nosotros</a></li>
                         <li><a href="/contacto">Contacto</a></li>
 
                     </ul>
+                    <br>
+                    <br>
+                    <br>
+                    {{#each menuProducts}}
                     <ul class="navbar-nav nav navbar-right">
-                    <li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                             vita
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                {{this.product}}
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">dienets</a></li> 
-                                    <li><a href="#">bloques y discos</a></li>
-                                    <li><a href="#">Equipo</a></li>
-                                    <li><a href="#">varios</a></li>
+                                    {{#each this.categoria}}
+                                    <li><a href="/productosBrand?product={{this.ppalProduct}}&category={{this.producto}}">{{this.label}}</a></li>
+                                    {{/each}}
                                 </ul>
-                    </li>
-					<li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                             Bego
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">ceras</a></li> 
-                                    <li><a href="#">metales</a></li>
-                                    <li><a href="#">reestimientos</a></li>
-                                    <li><a href="#">varios</a></li>
-                                </ul>
-                    </li>					
-					<li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                             Ivoclar
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">ceras</a></li> 
-                                    <li><a href="#">metales</a></li>
-                                    <li><a href="#">reestimientos</a></li>
-                                    <li><a href="#">varios</a></li>
-                                </ul>
-                    </li>	
-                    <li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                             Zhermack
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">ceras</a></li> 
-                                    <li><a href="#">metales</a></li>
-                                    <li><a href="#">reestimientos</a></li>
-                                    <li><a href="#">varios</a></li>
-                                </ul>
-                    </li>
-                    <li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Yety
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">ceras</a></li> 
-                                    <li><a href="#">metales</a></li>
-                                    <li><a href="#">reestimientos</a></li>
-                                    <li><a href="#">varios</a></li>
-                                </ul>
-                    </li>	
-                    <li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Dentona
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">ceras</a></li> 
-                                    <li><a href="#">metales</a></li>
-                                    <li><a href="#">reestimientos</a></li>
-                                    <li><a href="#">varios</a></li>
-                                </ul>
-                    </li>	
-                    <li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            WyH
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">ceras</a></li> 
-                                    <li><a href="#">metales</a></li>
-                                    <li><a href="#">reestimientos</a></li>
-                                    <li><a href="#">varios</a></li>
-                                </ul>
-                    </li>	
-                    <li role="presentation" class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Renfert
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">ceras</a></li> 
-                                    <li><a href="#">metales</a></li>
-                                    <li><a href="#">reestimientos</a></li>
-                                    <li><a href="#">varios</a></li>
-                                </ul>
-                    </li>		
-				</ul> 
-
+                        </li>
+                    </ul>
+                    {{/each}}
                 </div>
             </div>
         </nav>
@@ -220,23 +157,23 @@
 
             <div class="row">
 
-                
+
                 <!-- /.col-lg-3 -->
                 <div class="col-lg-12">
                     <div class="row">
                         {{#each productsByBrand}}
                         <div class="col-sm-6 col-md-3 why-to-choose text-center">
-                            <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">                                
+                            <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">
                                 <img src="{{this.imageUrl}}" alt="...">
                                 <div class="caption">
-                                    <h5 style="font-weight: bold;">{{this.title}}</h5>                                    
+                                    <h5 style="font-weight: bold;">{{this.title}}</h5>
                                     <p><a href="#" class="btn btn-ls btn-primary" data-toggle="modal"
                                             data-target="#largeModal{{this.idModal}}">Ver Mas</a></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="largeModal{{this.idModal}}" tabindex="-1" role="dialog" aria-labelledby="largeModal"
-                            aria-hidden="true">
+                        <div class="modal fade" id="largeModal{{this.idModal}}" tabindex="-1" role="dialog"
+                            aria-labelledby="largeModal" aria-hidden="true">
                             <div class="modal-dialog modal-ls">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -247,12 +184,12 @@
                                     <div class="col-lg-12 modal-body">
                                         <div class=" row">
                                             <div class="col-sm-6 col-md-6" style="text-align:center">
-                                                 <img src="{{this.imageUrl}}" alt="" >
+                                                <img src="{{this.imageUrl}}" alt="">
                                             </div>
                                             <div class="col-sm-6 col-md-6" style="text-align: justify">
-                                                 <h5>{{this.shortDescription}}</h5>
+                                                <h5>{{this.shortDescription}}</h5>
                                             </div>
-                                        
+
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -263,9 +200,9 @@
                             </div>
                         </div>
                         {{/each}}
-                        <!-- /modal-->                       
-    
-                        
+                        <!-- /modal-->
+
+
 
                         <!-- /modal -->
                     </div>

@@ -42,15 +42,212 @@ const principalProducts = [
 ];
 
 const menuProducts = [
-  { product: "Vita" },
-  { product: "Bego" },
-  { product: "Ivoclar" },
-  { product: "Zhermack" },
-  { product: "Yety" },
-  { product: "Dentona" },
+  {
+    product: "Vita",
+    categoria: [
+      {
+        producto: "dientes",
+        label: "Dientes",
+        ppalProduct: "vita"
+      },
+      {
+        producto: "bloquesDiscos",
+        label: "Bloques y Discos",
+        ppalProduct: "vita"
+      },
+      {
+        producto: "equipos",
+        label: "Equipos",
+        ppalProduct: "vita"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "vita"
+      },
+      {
+        producto: "ceramicas",
+        label: "Ceramicas",
+        ppalProduct: "vita"
+      }
+    ]
+  },
+  {
+    product: "Bego",
+    categoria: [
+      {
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "bego"
+      },
+      {
+        producto: "metales",
+        label: "Metales",
+        ppalProduct: "bego"
+      },
+      {
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "bego"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "bego"
+      }
+    ]
+  },
+  {
+    product: "Ivoclar",
+    categoria: [
+      {
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "ivoclar"
+      },
+      {
+        producto: "metales",
+        label: "Metales",
+        ppalProduct: "ivoclar"
+      },
+      {
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "ivoclar"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "ivoclar"
+      }
+    ]
+  },
+  {
+    product: "Zhermack",
+    categoria: [
+      {
+        producto: "yesos",
+        label: "Yesos",
+        ppalProduct: "zhermack"
+      },
+      {
+        producto: "desinfeccion",
+        label: "Desinfección",
+        ppalProduct: "zhermack"
+      },
+      {
+        producto: "siliconaslab",
+        label: "Siliconas para Laboratorio",
+        ppalProduct: "zhermack"
+      },
+      {
+        producto: "siliconascon",
+        label: "Siliconas para Consultorio",
+        ppalProduct: "zhermack"
+      }
+    ]
+  },
+  {
+    product: "Yety",
+    categoria: [
+      {
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "yety"
+      },
+      {
+        producto: "metales",
+        label: "Metales",
+        ppalProduct: "yety"
+      },
+      {
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "yety"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "yety"
+      }
+    ]
+  },
+  {
+    product: "Dentona",
+    categoria: [
+      {
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "dentona"
+      },
+      {
+        producto: "metales",
+        label: "Metales",
+        ppalProduct: "dentona"
+      },
+      {
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "dentona"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "dentona"
+      }
+    ]
+  },
   /*{ product: "Keystone" },*/
-  { product: "WyH" },
-  { product: "Renfert" }
+  {
+    product: "WyH",
+    categoria: [
+      {
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "wyh"
+      },
+      {
+        producto: "metales",
+        label: "Metales",
+        ppalProduct: "wyh"
+      },
+      {
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "wyh"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "wyh"
+      }
+    ]
+  },
+  {
+    product: "Renfert",
+    categoria: [
+      {
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "renfert"
+      },
+      {
+        producto: "metales",
+        label: "Metales",
+        ppalProduct: "renfert"
+      },
+      {
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "renfert"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "renfert"
+      }
+    ]
+  }
 ];
 
 module.exports = {
