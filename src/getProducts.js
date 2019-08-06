@@ -1,7 +1,7 @@
 "use strict";
 
 let products = require("../constants/constants");
-let productsdVita = require("../productsByBrand/vita/vita");
+let productsdVita = require("../productsByBrand/vitaP/vita");
 let productsdBego = require("../productsByBrand/bego/bego");
 let productsdZhermack = require("../productsByBrand/zhermack/zhermack");
 let productsdWyh = require("../productsByBrand/wyh");
