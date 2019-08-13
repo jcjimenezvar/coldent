@@ -7,36 +7,35 @@ const EMAIL_INFORMATION = {
 
 const principalProducts = [
   {
-    imageUrl: "assets/images/index/1.jpg",
+    imageUrl: "assets/images/vita/1.jpg",
     nombre: "VITA Easyshade® V",
     description: "Determinación óptima del color, seguridad máxima"
   },
   {
-    imageUrl: "assets/images/index/2.jpg",
-    nombre: "VITA VIONIC® WAX",
-    description: "Para el encerado CAD/CAM eficiente"
+    imageUrl: "assets/images/bego/1.jpg",
+    nombre: "Bellavest © SH",
+    description: ""
   },
   {
-    imageUrl: "assets/images/index/3.jpg",
-    nombre: "VITA VIONIC® BOND",
-    description:
-      "Para la unión segura de dientes protésicos VITA a la base VITA VIONIC"
+    imageUrl: "assets/images/bego/11.jpg",
+    nombre: "Metal Wiron 99",
+    description:""
   },
   {
-    imageUrl: "assets/images/index/7.jpg",
-    nombre: "VITAVM®13",
-    description:
-      "Para el recubrimiento total de estructuras metálicas con un CET convencional"
-  },
-  {
-    imageUrl: "assets/images/index/8.jpg",
-    nombre: "VITA VMK Master®",
+    imageUrl: "assets/images/vita/42.jpg",
+    nombre: " Ceramica VITAVM®13",
     description:
       "Para el recubrimiento total de estructuras metálicas con un CET convencional"
   },
   {
-    imageUrl: "assets/images/index/9.jpg",
-    nombre: "VITA TITANKERAMIK",
+    imageUrl: "assets/images/zhermack/11.jpg",
+    nombre: " Yeso Elite Base",
+    description:
+      "Para el recubrimiento total de estructuras metálicas con un CET convencional"
+  },
+  {
+    imageUrl: "assets/images/bego/14.jpg",
+    nombre: "Cera para Modelar",
     description: "Cerámica de recubrimiento para estructuras de titanio"
   }
 ];
@@ -46,8 +45,8 @@ const menuProducts = [
     product: "Vita",
     categoria: [
       {
-        producto: "dientes",
-        label: "Dientes",
+        producto: "ceramicas",
+        label: "Ceramicas",
         ppalProduct: "vita"
       },
       {
@@ -61,14 +60,40 @@ const menuProducts = [
         ppalProduct: "vita"
       },
       {
+        producto: "dientes",
+        label: "Dientes",
+        ppalProduct: "vita"
+      },
+      {
         producto: "varios",
         label: "Varios",
         ppalProduct: "vita"
       },
+      
+    ]
+  },
+  {
+    product: "Ivoclar",
+    categoria: [
       {
-        producto: "ceramicas",
-        label: "Ceramicas",
-        ppalProduct: "vita"
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "ivoclar"
+      },
+      {
+        producto: "metales",
+        label: "Metales",
+        ppalProduct: "ivoclar"
+      },
+      {
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "ivoclar"
+      },
+      {
+        producto: "varios",
+        label: "Varios",
+        ppalProduct: "ivoclar"
       }
     ]
   },
@@ -98,27 +123,27 @@ const menuProducts = [
     ]
   },
   {
-    product: "Ivoclar",
+    product: "Yety",
     categoria: [
       {
-        producto: "ceras",
-        label: "Ceras",
-        ppalProduct: "ivoclar"
+        producto: "revestimientos",
+        label: "Revestimientos",
+        ppalProduct: "yety"
       },
       {
         producto: "metales",
         label: "Metales",
-        ppalProduct: "ivoclar"
+        ppalProduct: "yety"
       },
       {
-        producto: "revestimientos",
-        label: "Revestimientos",
-        ppalProduct: "ivoclar"
+        producto: "ceras",
+        label: "Ceras",
+        ppalProduct: "yety"
       },
       {
         producto: "varios",
-        label: "Varios",
-        ppalProduct: "ivoclar"
+        label: "Accesorios",
+        ppalProduct: "yety"
       }
     ]
   },
@@ -148,53 +173,18 @@ const menuProducts = [
     ]
   },
   {
-    product: "Yety",
-    categoria: [
-      {
-        producto: "ceras",
-        label: "Ceras",
-        ppalProduct: "yety"
-      },
-      {
-        producto: "metales",
-        label: "Metales",
-        ppalProduct: "yety"
-      },
-      {
-        producto: "revestimientos",
-        label: "Revestimientos",
-        ppalProduct: "yety"
-      },
-      {
-        producto: "varios",
-        label: "Varios",
-        ppalProduct: "yety"
-      }
-    ]
-  },
-  {
     product: "Dentona",
     categoria: [
       {
         producto: "ceras",
-        label: "Ceras",
+        label: "Yesos",
         ppalProduct: "dentona"
       },
       {
         producto: "metales",
-        label: "Metales",
+        label: "Placas",
         ppalProduct: "dentona"
       },
-      {
-        producto: "revestimientos",
-        label: "Revestimientos",
-        ppalProduct: "dentona"
-      },
-      {
-        producto: "varios",
-        label: "Varios",
-        ppalProduct: "dentona"
-      }
     ]
   },
   /*{ product: "Keystone" },*/
@@ -203,24 +193,9 @@ const menuProducts = [
     categoria: [
       {
         producto: "ceras",
-        label: "Ceras",
+        label: "Equipos",
         ppalProduct: "wyh"
       },
-      {
-        producto: "metales",
-        label: "Metales",
-        ppalProduct: "wyh"
-      },
-      {
-        producto: "revestimientos",
-        label: "Revestimientos",
-        ppalProduct: "wyh"
-      },
-      {
-        producto: "varios",
-        label: "Varios",
-        ppalProduct: "wyh"
-      }
     ]
   },
   {
@@ -228,24 +203,9 @@ const menuProducts = [
     categoria: [
       {
         producto: "ceras",
-        label: "Ceras",
+        label: "Equipamentos",
         ppalProduct: "renfert"
       },
-      {
-        producto: "metales",
-        label: "Metales",
-        ppalProduct: "renfert"
-      },
-      {
-        producto: "revestimientos",
-        label: "Revestimientos",
-        ppalProduct: "renfert"
-      },
-      {
-        producto: "varios",
-        label: "Varios",
-        ppalProduct: "renfert"
-      }
     ]
   }
 ];
