@@ -112,13 +112,13 @@
                         <br>
                         {{#each menuProducts}}
                         <ul class="navbar-nav nav navbar-right">
-                            <li role="presentation" class="dropdown">
+                            <li role="presentation" class="dropdown" >
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="/productosBrand" role="button"
                                     aria-haspopup="true" aria-expanded="false">
                                     {{this.product}}
                                     <ul class="dropdown-menu">
                                         {{#each this.categoria}}
-                                        <li><a href="/productosBrand?product={{this.ppalProduct}}&category={{this.producto}}">{{this.label}}</a></li>
+                                        <li class="active"><a href="/productosBrand?product={{this.ppalProduct}}&category={{this.producto}}">{{this.label}}</a></li>
                                         {{/each}}
                                     </ul>
                             </li>
@@ -167,18 +167,66 @@
                             <p>Encuentra los mejores productos para tu laboratorio o tu clinica dental al instante.</p>
                         </div>
                         <div class="row">
-                            {{#each list}}
                             <div class="col-sm-6 col-md-4 why-to-choose text-center">
                                 <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">
-                                    <img src="{{this.imageUrl}}" alt="...">
+                                    <img src="assets/images/vita/1.jpg" alt="...">
                                     <div class="caption">
-                                        <h5 style="font-weight: bold;">{{this.nombre}}</h5>
-                                        <p><a href="http://www.coldentsas.com/productosBrand?product=ivoclar&category=ceras" class="btn btn-ls btn-primary">Ver Mas</a></p>
+                                        <h5 style="font-weight: bold;">EQUIPOS</h5>
+                                        <p><a href="http://www.coldentsas.com/productosBrand?product=vita&category=equipos" class="btn btn-ls btn-primary">Ver Mas</a></p>
                                     </div>
                                 </div>
                             </div>
-                            {{/each}}
-                        </div>
+                        
+                            <div class="col-sm-6 col-md-4 why-to-choose text-center">
+                                <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">
+                                    <img src="assets/images/bego/1.jpg" alt="...">
+                                    <div class="caption">
+                                        <h5 style="font-weight: bold;">Bellavest © SH</h5>
+                                        <p><a href="http://www.coldentsas.com/productosBrand?product=bego&category=revestimientos" class="btn btn-ls btn-primary">Ver Mas</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="col-sm-6 col-md-4 why-to-choose text-center">
+                                <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">
+                                    <img src="assets/images/bego/11.jpg" alt="...">
+                                    <div class="caption">
+                                        <h5 style="font-weight: bold;">Metal Wiron 99</h5>
+                                        <p><a href="http://www.coldentsas.com/productosBrand?product=bego&category=metales" class="btn btn-ls btn-primary">Ver Mas</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="col-sm-6 col-md-4 why-to-choose text-center">
+                                <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">
+                                    <img src="assets/images/vita/42.jpg" alt="...">
+                                    <div class="caption">
+                                        <h5 style="font-weight: bold;">Ceramica VITAVM®13</h5>
+                                        <p><a href="http://www.coldentsas.com/productosBrand?product=vita&category=ceramicas" class="btn btn-ls btn-primary">Ver Mas</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="col-sm-6 col-md-4 why-to-choose text-center">
+                                <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">
+                                    <img src="assets/images/zhermack/11.jpg" alt="...">
+                                    <div class="caption">
+                                        <h5 style="font-weight: bold;">Yeso Elite Base</h5>
+                                        <p><a href="http://www.coldentsas.com/productosBrand?product=zhermack&category=yesos" class="btn btn-ls btn-primary">Ver Mas</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="col-sm-6 col-md-4 why-to-choose text-center">
+                                <div class="thumbnail" style="box-shadow: -16px -5px 27px -22px rgba(0,0,0,0.75);">
+                                    <img src="assets/images/bego/14.jpg" alt="...">
+                                    <div class="caption">
+                                        <h5 style="font-weight: bold;">Cera para Modelar</h5>
+                                        <p><a href="http://www.coldentsas.com/productosBrand?product=bego&category=ceras" class="btn btn-ls btn-primary">Ver Mas</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
                     </div>
                 </div>
             </div>
