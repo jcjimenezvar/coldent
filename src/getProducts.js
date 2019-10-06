@@ -73,7 +73,27 @@ exports.getProductsByBrand = async (product, category) => {
         }
         break;
       case "ivoclar":
-        productBrandList = productsdIvoclar.ivoclar;
+        productBrandList = productsIvoclar.ivoclar;
+        switch (category) {
+          case "cdientes":
+            productBrandList =roductsdIvoclar.informationCategory.dientes;
+            break;
+          case "equipos":
+            productBrandList = roductsdIvoclar.informationCategory.equipos;
+            break;
+          case "materiales":
+            productBrandList =roductsdIvoclar.informationCategory.materiales;
+            break;
+          case "prevencion":
+            productBrandList = roductsdIvoclar.informationCategory.prevencio;
+            break;
+            case "varios":
+            productBrandList = roductsdIvoclar.informationCategory.varios;
+            break;
+          default:
+            productBrandList = roductsdIvoclar.ivoclar;
+            break;
+        }
         break;
       case "zhermack":
         switch (category) {
