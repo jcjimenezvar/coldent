@@ -77,7 +77,7 @@ const menuProducts = [
     categoria: [
       {
         producto: "dientes",
-        label: "Dienetes y Aleaciones",
+        label: "Dientes y Aleaciones",
         ppalProduct: "ivoclar"
       },
       {
