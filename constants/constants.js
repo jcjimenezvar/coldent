@@ -76,18 +76,23 @@ const menuProducts = [
     product: "Ivoclar",
     categoria: [
       {
-        producto: "ceras",
-        label: "Ceras",
+        producto: "dientes",
+        label: "Dienetes y Aleaciones",
         ppalProduct: "ivoclar"
       },
       {
-        producto: "metales",
-        label: "Metales",
+        producto: "equipos",
+        label: "Equipos",
         ppalProduct: "ivoclar"
       },
       {
-        producto: "revestimientos",
-        label: "Revestimientos",
+        producto: "materiales",
+        label: "Materiales",
+        ppalProduct: "ivoclar"
+      },
+      {
+        producto: "prevencion",
+        label: "Prevención y cuidado",
         ppalProduct: "ivoclar"
       },
       {
@@ -123,28 +128,16 @@ const menuProducts = [
     ]
   },
   {
-    product: "Yety",
+    product: "Yeti",
     categoria: [
-      {
-        producto: "revestimientos",
-        label: "Revestimientos",
-        ppalProduct: "yety"
-      },
-      {
-        producto: "metales",
-        label: "Metales",
-        ppalProduct: "yety"
-      },
-      {
-        producto: "ceras",
-        label: "Ceras",
-        ppalProduct: "yety"
-      },
+      
       {
         producto: "varios",
-        label: "Accesorios",
+        label: "varios",
         ppalProduct: "yety"
-      }
+      },
+      
+      
     ]
   },
   {
