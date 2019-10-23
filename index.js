@@ -53,7 +53,7 @@ app.get("/productos", async function(req, res) {
     menuProducts,
     productsByBrand    
   };*/
-  res.render("productos", /*context*/);
+  res.render("productos" /*context*/);
 });
 
 app.get("/productosBrand", async function(req, res) {
@@ -61,8 +61,11 @@ app.get("/productosBrand", async function(req, res) {
     if (err) throw err;
     console.log(data);
   });
-  const productsByBrand = await products.getProductsByBrand(req.query.product, req.query.category);  
-  const context = {    
+  const productsByBrand = await products.getProductsByBrand(
+    req.query.product,
+    req.query.category
+  );
+  const context = {
     menuProducts,
     productsByBrand
   };
@@ -87,6 +90,19 @@ app.post("/sendMessage", async function(req, res) {
     console.log(data);
   });
   res.render("contacto");
+});
+
+app.post("/searchValue", async (req, res) => {
+  const menuProducts = await products.getMenuProducts(req, res, (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });
+  const enconteredValues = await products.searchValues(req, res);
+  const context = {
+    menuProducts,
+    productsByBrand: enconteredValues
+  };
+  res.render("productos", context);
 });
 
 app.listen(port);

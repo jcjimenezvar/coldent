@@ -73,25 +73,25 @@ exports.getProductsByBrand = async (product, category) => {
         }
         break;
       case "ivoclar":
-        productBrandList = productsIvoclar.ivoclar;
+        productBrandList = productsdIvoclar.ivoclar;
         switch (category) {
-          case "cdientes":
-            productBrandList =roductsdIvoclar.informationCategory.dientes;
+          case "dientes":
+            productBrandList = productsdIvoclar.informationCategory.dientes;
             break;
           case "equipos":
-            productBrandList = roductsdIvoclar.informationCategory.equipos;
+            productBrandList = productsdIvoclar.informationCategory.equipos;
             break;
           case "materiales":
-            productBrandList =roductsdIvoclar.informationCategory.materiales;
+            productBrandList = productsdIvoclar.informationCategory.materiales;
             break;
           case "prevencion":
-            productBrandList = roductsdIvoclar.informationCategory.prevencio;
+            productBrandList = productsdIvoclar.informationCategory.prevencion;
             break;
-            case "varios":
-            productBrandList = roductsdIvoclar.informationCategory.varios;
+          case "varios":
+            productBrandList = productsdIvoclar.informationCategory.varios;
             break;
           default:
-            productBrandList = roductsdIvoclar.ivoclar;
+            productBrandList = productsdIvoclar.ivoclar;
             break;
         }
         break;
@@ -140,4 +140,59 @@ exports.getProductsByBrand = async (product, category) => {
     throw error.message;
   }
   return productBrandList;
+};
+
+exports.searchValues = async (req, res) => {
+  const { searchValue } = req.body;
+  let findedProducts = [];
+  productsdVita.vita.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+  productsdBego.bego.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+
+  productsdZhermack.zhermack.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+
+  productsdWyh.wyh.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+
+  productsdIvoclar.ivoclar.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+  productsdYety.yety.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+  productsdDentona.dentona.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+  productsdKeystone.keystone.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+  productsdRenfert.renfert.forEach(ele => {
+    if (ele.title.toLowerCase().includes(searchValue)) {
+      findedProducts.push(ele);
+    }
+  });
+
+  return findedProducts;
 };

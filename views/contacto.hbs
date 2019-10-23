@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="coldent, dentales de colombia, coldent dentales de colombia, odontologia, odontologo, productos dentales, productos odontologicos, vita, bego, ivoclar, zhermack, yeti, dentona, wyh, renfert, suministros odontologicos">
+    <meta name="keywords"
+        content="coldent, dentales de colombia, coldent dentales de colombia, odontologia, odontologo, productos dentales, productos odontologicos, vita, bego, ivoclar, zhermack, yeti, dentona, wyh, renfert, suministros odontologicos">
     <!--Site Title-->
     <title>Contacto-ColDent</title>
 
@@ -91,10 +92,10 @@
                             aria-expanded="false">
                             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             <ul class="dropdown-menu">
-                                <form class="form-search">
+                                <form class="form-search" action="/searchValue" method="POST">
                                     <div class="input-group">
                                         <input class="form-control form-text" maxlength="128" placeholder="Buscar"
-                                            size="15" type="text" />
+                                            size="15" type="text" id="searchValue" name="searchValue" />
                                         <span class="input-group-btn"><button class="btn btn-primary"><i
                                                     class="fa fa-search fa-lg">&nbsp;</i></button></span>
                                     </div>
@@ -116,7 +117,9 @@
                             {{this.product}}
                             <ul class="dropdown-menu">
                                 {{#each this.categoria}}
-                                <li><a href="/productosBrand?product={{this.ppalProduct}}&category={{this.producto}}">{{this.label}}</a></li>
+                                <li><a
+                                        href="/productosBrand?product={{this.ppalProduct}}&category={{this.producto}}">{{this.label}}</a>
+                                </li>
                                 {{/each}}
                             </ul>
                     </li>
